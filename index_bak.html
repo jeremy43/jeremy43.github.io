@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="real-nav">
+            <div class="img-container">
+                <!-- <img src="img/me.jpg" class="avatar"> -->
+                <div class="name gradient-blue">Yuqing Zhu</div>
+                <div class="mail">
+                    <img src="img/mail.png" class="mail-img">
+                    <div class="mail-text">
+                        <a href="mailto:yuqingzhu@ucsb.edu" style="color: #999999;text-decoration: none">
+                            yuqingzhu@ucsb.edu
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-list">
+                <div class="nav-item"><a href="#nav1">Education</a></div>
+                <div class="nav-item"><a href="#nav2">Research</a></div>
+            </div>
+        </div>
+        <div class="nav-bg"></div>
+        <div class="nav-white"></div>
+        <!--<div class="white-hide"></div>-->
+        <!--<div class="top-line"></div>-->
+        <div class="content">
+            <div id="nav1" class="block" style="margin-top: 80px">
+                <div class="block-title gradient-blue">Education</div>
+                <div class="sub-line"></div>
+                <div class="block-detail">
+                    <div class="school">
+                        <div class="logo-container">
+                            <img class="school-logo" src="img/ucsb.jpg">
+                        </div>
+                        <div class="school-detail">
+                            <div class="school-name">University of California, Santa Barbara</div>
+                            <div class="sub-info">
+                                <div class="major">Ph.D in Computer Science<br>
+                                </div>
+                                <div class="time">2018.09–</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="school">
+                        <div class="logo-container">
+                            <img class="school-logo" src="img/nju@2x.png">
+                        </div>
+                        <div class="school-detail">
+                            <div class="school-name">Nanjing University</div>
+                            <div class="sub-info">
+                                <div class="major">B.S in Computer Science<br>
+                                    National Elite Program (41 selected from 265 competitors)
+                                </div>
+                                <div class="time">2014.09–2018.06</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav2" class="block">
+                <div class="block-title gradient-blue">Research</div>
+                <div class="sub-line"></div>
+                <div class="block-detail">
+                    <div class="item">
+                        <div class="item-title gradient-blue">
+                            Microsoft Research Asia (MSRA) Visual Computing Group
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Proposed a weakly-supervised solution to video instance-aware segmentation.
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Leveraged optical flow to extract motion information to distinguish instances with similar
+                            appearances.
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Utilized ground truth bounding boxes as weak supervision for instance detection and
+                            segmentation
+                            in
+                            video jointly, and submitted the paper for CVPR-2018 as the first author.
+                        </div>
+                        <div class="sub-item">
+                            <div class="advisor">Advisor: Prof.Jifeng Dai</div>
+                            <div class="place">MSRA, Beijing, China</div>
+                            <div class="time">2017.06 - 2017.11</div>
+                        </div>
+                        <div class="item-line"></div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title gradient-blue">
+                            University of Wisconsin-Madison Machine Learning Group
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Applied to the domain of machine teaching, aimed to determine the smallest training set to
+                            teach
+                            children to build simple programs.
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Proposed models of children’s learning process with random graph theory, and measured
+                            children’s
+                            loss considering the connectedness of the graph.
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Formalized the loss of children’s learning process and the size of the training set as a
+                            bi-level optimization problem.
+                        </div>
+                        <div class="sub-item">
+                            <div class="advisor">Advisor: Prof. Jerry Zhu</div>
+                            <div class="place">UW-Madison, USA</div>
+                            <div class="time">2017.02 - 2017.05</div>
+                        </div>
+                        <div class="item-line"></div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title gradient-blue">
+                            LAMDA Lab
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Proposed a deep discrete hybrid recommendation system for image & text recommendation.
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            Constructed a model to learn hash codes of users and items give users’ feature and previous
+                            user-item rating matrix, significantly reducing the storage cost by exploiting the efficient
+                            hamming distance based
+                            retrieval scheme.
+                        </div>
+                        <div class="item-main-text"><span class="dot"></span>
+                            learned users’ code through deep neural network and encoded items by solving a discrete
+                            optimization
+                            problem based on user-item rating matrix.
+                        </div>
+                        <div class="sub-item">
+                            <div class="advisor">Advisor: Wu-Jun Li</div>
+                            <div class="place">NJU,Nanjing,China</div>
+                            <div class="time">2016.05 - 2017.09</div>
+                        </div>
+                        <div class="item-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_blank"></div>
+    </div>
+    <script type="text/javascript" id="clustrmaps"
+        src="//cdn.clustrmaps.com/map_v2.js?d=kwg98ppOoeorXKvD5js_NpuOc7jpv6hKKxTzJrTatvw"></script>
+    <script>
+        window.onload = function () {
+            var dom = document.getElementsByClassName('clustrmaps-map-control');
+            dom[0].style.display = "none";
+        }
+    </script>
+</body>
+<style type="text/css">
+    body {
+        min-width: 1200px;
+        margin: 0;
+        font-family: 'PingFangSC-Light', 'Helvetica Neue', 'Hiragino Sans GB', "Microsoft YaHei", Helvetica, "宋体", sans-serif;
+        /*background: url("img/pattern.png");*/
+        /*background-size: 8px 8px;*/
+    }
+
+    #clustrmaps-widget-v2 {
+        display: none;
+    }
+
+    .clustrmaps-map-control {
+        display: none
+    }
+
+    ._blank {
+        height: 200px;
+        width: 100%;
+    }
+
+    .strength-item {
+        font-size: 18px;
+        color: #999999;
+    }
+
+    .strength-type {
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    .strength {
+        float: left;
+        margin-right: 100px;
+    }
+
+    .append {
+        color: #999999;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .course-score {
+        margin-top: 10px;
+        font-size: 70px;
+        font-weight: 200;
+    }
+
+    .course-name {
+        font-weight: 600;
+    }
+
+    .course-container {
+        margin-right: 20px;
+        display: inline-block;
+        width: 160px;
+        height: 180px;
+        border: 1px solid rgb(60, 89, 184);
+        color: rgb(60, 89, 184);
+        text-align: center;
+    }
+
+    .link {
+        color: #3092db;
+    }
+
+    .dot {
+        display: block;
+        position: relative;
+        width: 5px;
+        height: 5px;
+        background-color: #adadad;
+        left: -15px;
+        top: 14px;
+        border-radius: 50%;
+    }
+
+    .item-line {
+        /*background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(60, 89, 184)), to(rgb(4, 193, 255)));*/
+        background-image: linear-gradient(90deg, rgb(60, 89, 184), rgb(4, 193, 255));
+        width: 750px;
+        height: 1px;
+        margin-top: 5px;
+    }
+
+    .sub-item {
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+        color: rgb(83, 83, 83);
+        padding-left: 15px;
+    }
+
+    .item-main-text {
+        padding-left: 15px;
+        font-size: 16px;
+        width: 700px;
+        color: #999999;
+    }
+
+    .item-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: 'PingFangSC-Regular', 'Helvetica Neue', 'Hiragino Sans GB', "Microsoft YaHei", Helvetica, "宋体", sans-serif;
+    }
+
+    .item-sub-title {
+        font-size: 18px;
+        font-family: 'PingFangSC-Regular', 'Helvetica Neue', 'Hiragino Sans GB', "Microsoft YaHei", Helvetica, "宋体", sans-serif;
+
+    }
+
+    .block {
+        margin-bottom: 80px;
+    }
+
+    .w-advisor {
+        width: 400px;
+        display: inline-block;
+    }
+
+    .advisor {
+        width: 285px;
+        display: inline-block;
+    }
+
+    .major {
+        vertical-align: top;
+        display: inline-block;
+        width: 515px;
+    }
+
+    .time {
+        vertical-align: top;
+        display: inline-block;
+        width: 180px;
+    }
+
+    .place {
+        width: 285px;
+        display: inline-block;
+    }
+
+    .school-name {
+        font-size: 24px;
+        font-family: 'PingFangSC-Regular', 'Helvetica Neue', 'Hiragino Sans GB', "Microsoft YaHei", Helvetica, "宋体", sans-serif;
+    }
+
+    .school,
+    .item {
+        margin-bottom: 20px;
+    }
+
+    .sub-info {
+        /*text-align: justify;*/
+    }
+
+    .school-detail {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .school-logo {
+        position: relative;
+        top: 12px;
+        height: 60px;
+    }
+
+    .logo-container {
+        display: inline-block;
+        width: 50px;
+    }
+
+    .block-detail {
+        margin-top: 20px;
+    }
+
+    .sub-line {
+        width: 20px;
+        height: 3px;
+        background-color: rgb(60, 89, 184);
+    }
+
+    .block-title {
+        font-size: 30px;
+        font-family: 'PingFangSC-Regular', 'Helvetica Neue', 'Hiragino Sans GB', "Microsoft YaHei", Helvetica, "宋体", sans-serif;
+    }
+
+    .content {
+        padding: 0 20px 0 360px;
+        z-index: 91;
+    }
+
+    .bg-content {
+        z-index: 80;
+        position: absolute;
+        top: 0;
+        margin-left: 300px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .top-line {
+        background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(60, 89, 184)), to(rgb(4, 193, 255)));
+        background-image: linear-gradient(90deg, rgb(60, 89, 184), rgb(4, 193, 255));
+        width: 100%;
+        height: 5px;
+        position: fixed;
+        z-index: 85;
+        top: 20px;
+    }
+
+    .white-hide {
+        width: 100%;
+        height: 20px;
+        position: fixed;
+        z-index: 85;
+        top: 0;
+        background-color: white;
+    }
+
+    .nav-list {
+        margin: 60px 0 0 62px;
+        text-align: left;
+    }
+
+    .nav-item {
+        margin-top: 5px;
+    }
+
+    .nav-item a {
+        color: #1c8de0;
+        text-decoration: none;
+    }
+
+    .img-container {
+        margin-top: 80px;
+    }
+
+    .avatar {
+        border-radius: 100000px;
+        width: 140px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .gradient-blue {
+        background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgb(60, 89, 184)), to(rgb(4, 193, 255)));
+        background-image: linear-gradient(90deg, rgb(60, 89, 184), rgb(4, 193, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .mail-img {
+        width: 20px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+    }
+
+    .mail-text {
+        display: inline-block;
+        color: #999999;
+    }
+
+    .mail {
+        margin-top: 10px;
+        color: darkgray;
+        letter-spacing: 0.5px;
+    }
+
+    .real-nav {
+        text-align: center;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .nav-bg {
+        width: 300px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background: rgba(255, 255, 255, 0.70);
+        box-shadow: 3px 0 6px 0 rgba(0, 0, 0, 0.17);
+        opacity: 0.5;
+        z-index: 90;
+    }
+
+    .nav-white {
+        width: 300px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background: #ffffff;
+        z-index: 80;
+    }
+</style>
+
+</html>
